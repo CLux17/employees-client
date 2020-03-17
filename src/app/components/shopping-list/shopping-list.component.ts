@@ -11,8 +11,8 @@ export class ShoppingListComponent implements OnInit {
     { description: 'shampoo', purchased: false },
     { description: 'Socks', purchased: true }
   ];
-
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
@@ -30,6 +30,7 @@ export class ShoppingListComponent implements OnInit {
   markedPurchased(item: ShoppingItem) {
     item.purchased = true;
   }
+
 }
 
 interface ShoppingItem {

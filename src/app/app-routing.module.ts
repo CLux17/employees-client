@@ -4,6 +4,7 @@ import { ShoppingListComponent } from './components/shopping-list/shopping-list.
 import { BankKioskComponent } from './components/bank-kiosk/bank-kiosk.component';
 
 
+
 const routes: Routes = [
   {
     path: 'shopping',
