@@ -3,12 +3,12 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class BankAccountService {
 
-  constructor(private bonusCalculator: ICalculateBonuses) { }
+  // constructor(private bonusCalculator: ICalculateBonuses) { }
   private currentBalance = 7000;
 
   deposit(amount: number) {
-    const bonus = this.bonusCalculator.calculateBonusFor(this, amount);
-    this.currentBalance += amount + bonus;
+    // const bonus = this.bonusCalculator.calculateBonusFor(this, amount);
+    this.currentBalance += amount;
   }
 
   withdraw(amount: number) {
@@ -20,16 +20,17 @@ export class BankAccountService {
   }
 }
 
-export interface ICalculateBonuses {
+// export interface ICalculateBonuses {
 
-  calculateBonusFor: (account: BankAccountService, amountOfDeposit: number) => number;
-}
+//   calculateBonusFor: (account: BankAccountService, amountOfDeposit: number) => number;
+// }
 
 
-export class StandardBonusCalculator implements ICalculateBonuses {
+// export class StandardBonusCalculator implements ICalculateBonuses {
 
-  calculateBonusFor(account: BankAccountService, amountOfDeposit: number) {
-    return account.getBalance() > 7000 ? amountOfDeposit * .10 : 0;
-  }
-}
+//   calculateBonusFor(account: BankAccountService, amountOfDeposit: number) {
+//     return account.getBalance() > 7000 ? amountOfDeposit * .10 : 0;
+//   }
+// }
+
 
