@@ -17,6 +17,7 @@ import { EmployeeEntryComponent } from './components/employees/components/employ
 import { EmployeeListComponent } from './components/employees/components/employee-list/employee-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EmployeeEffects } from './effects/employees.effects';
+import { ErrorDisplayComponent } from './components/error-display/error-display.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { EmployeeEffects } from './effects/employees.effects';
     CounterComponent,
     EmployeesComponent,
     EmployeeEntryComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    ErrorDisplayComponent
   ],
   imports: [
     BrowserModule,
